@@ -1,0 +1,28 @@
+<h1>Editing story_state</h1>
+
+<% form_for(@story_state) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :order %><br />
+    <%= f.text_field :order %>
+  </p>
+  <p>
+    <%= f.label :user_visible %><br />
+    <%= f.check_box :user_visible %>
+  </p>
+  <p>
+    <%= f.label :project_owner %><br />
+    <%= f.text_field :project_owner %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @story_state %> |
+<%= link_to 'Back', story_states_path %>

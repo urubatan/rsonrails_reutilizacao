@@ -1,0 +1,33 @@
+<p>
+  <b>Project:</b>
+  <%=h @user_story.project %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%=h @user_story.title %>
+</p>
+
+<p>
+  <b>As a:</b>
+  <%=h @user_story.as_a %>
+</p>
+
+<p>
+  <b>I want to:</b>
+  <%=h @user_story.i_want_to %>
+</p>
+
+<p>
+  <b>So that:</b>
+  <%=h @user_story.so_that %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @user_story.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_story_path(@user_story) %> |
+<%= link_to 'Back', user_stories_path %>
