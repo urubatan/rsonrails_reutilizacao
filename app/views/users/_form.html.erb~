@@ -1,0 +1,10 @@
+ <%= f.error_messages %>
+  <p>
+    <%= f.label :uploaded_data, "Foto" %><br />
+    <%= f.file_field :uploaded_data %>
+  </p>
+ <%= my_input f, :login %>
+ <%= my_input f, :password %>
+ <%= my_input f, :name %>
+ <%= my_input f, :email %>
+

@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+<% (1..10).each do |n| %>
+usr<%= n %>:
+  id: <%= n %>
+  login: user<%= n %>
+  password: user<%= n %>
+  name: Usuário Número <%= n %>
+  email: user<%= n %>@domain<%= n %>.com
+<% end %>

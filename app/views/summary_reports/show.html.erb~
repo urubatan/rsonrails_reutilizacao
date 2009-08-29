@@ -1,0 +1,18 @@
+<p>
+  <b>Project:</b>
+  <%=h @summary_report.project %>
+</p>
+
+<p>
+  <b>Task type:</b>
+  <%=h @summary_report.task_type %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%=h @summary_report.user %>
+</p>
+
+
+<%= link_to 'Edit', edit_summary_report_path(@summary_report) %> |
+<%= link_to 'Back', summary_reports_path %>

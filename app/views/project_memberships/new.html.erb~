@@ -1,0 +1,17 @@
+<h1>Nova associação a um projeto</h1>
+<% form_for(@project_membership) do |f| %>
+  <%= f.hidden_field :project_id %>
+  <%= f.hidden_field :user_id %>
+  <%= f.hidden_field :joined %>
+  <%= f.error_messages %>
+  <p>
+    Projeto: <%= h @project_membership.project.name %>
+  </p>
+  <p>
+    Data de início: <%= h @project_membership.joined %>
+  </p>
+  <p>
+    <%= f.submit "Confirmar associação a projeto" %>
+  </p>
+<% end %>
+

@@ -1,0 +1,22 @@
+<p>
+  <b>Data de Início:</b>
+  <%=h @project_membership.joined %>
+</p>
+
+<p>
+  <b>Data de Fim:</b>
+  <%=h @project_membership.leaved %>
+</p>
+
+<p>
+  <b>Usuário:</b>
+  <%=h @project_membership.user.name %>
+</p>
+
+<p>
+  <b>Projeto:</b>
+  <%=h @project_membership.project.name %>
+</p>
+
+<%= link_to 'Edit', edit_project_project_membership_path(@project_membership.project) %> |
+

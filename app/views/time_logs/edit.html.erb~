@@ -1,0 +1,3 @@
+<h1>Editando registro de tempo trabalhado</h1>
+<%= render :partial => "form", :locals => {:button_label => "Atualizar"} %>
+<%= render :partial => "past_tasks" %>

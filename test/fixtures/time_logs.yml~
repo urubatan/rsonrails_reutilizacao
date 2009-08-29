@@ -1,0 +1,21 @@
+one: 
+  user_id: 1
+  task_type_id: 1
+  description: "a"
+  task_date: <%= Date.today %>
+  worked_hours: <%= 2.hours %>
+
+two: 
+  user_id: 1
+  task_type_id: 2
+  description: "a"
+  task_date: <%= Date.today %>
+  worked_hours: <%= 3.hours %>
+  
+tree: 
+  user_id: 1
+  task_type_id: 1
+  description: "a"
+  task_date: <%= Date.today %>
+  worked_hours: <%= 5.hours %>
+

@@ -1,0 +1,20 @@
+<table width="100%">
+  <tr>
+    <th>Data</th>
+    <th>Usuário</th>
+    <th>Projeto</th>
+    <th>Tipo de Tarefa</th>
+    <th>Horas Trabalhadas</th>
+  </tr>
+  <% @summary_report.report_data.each do |rd|  %>
+    <tr>
+      <td><%= rd[:task_date] %></td>
+      <td><%= rd[:user] %></td>
+      <td><%= rd[:project] %></td>
+      <td><%= rd[:task] %></td>
+      <td><%= rd[:total_work] %></td>
+    </tr>
+  <% end %>
+</table>
+<%= link_to 'Novo Relatório', new_summary_report_path %> 
+

@@ -1,13 +1,10 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
-
-one:
-  name: MyString
-  nick: MyString
-  password: MyString
-  email: MyString
-
-two:
-  name: MyString
-  nick: MyString
-  password: MyString
-  email: MyString
+<% (1..10).each do |n| %>
+usr<%= n %>:
+  id: <%= n %>
+  login: user<%= n %>
+  password: user<%= n %>
+  name: Usuário Número <%= n %>
+  email: user<%= n %>@domain<%= n %>.com
+  filename: arquivo<%= n %>.jpg
+<% end %>
