@@ -1,6 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :summary_reports, :as => "relatorio_simples", :path_names => {:new => "novo", :show => "visualizar"}
-  map.resources :sessions, :as => "sessao", :path_names => {:new => "nova"}
+  map.resource :sessions, :as => "sessao", :path_names => {:new => "nova"}
   map.resources :users, :as => "usuarios", :path_names => {:new => "novo", :edit => "ver"} do |usr|
     usr.resources :time_logs, :as => "registro_de_horas", :path_names => {:new => "novo", :edit => "ver"}
   end
